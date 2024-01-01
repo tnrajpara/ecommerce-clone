@@ -1,0 +1,43 @@
+{
+  "_id": { "$oid": "64ad4dae2adecb9f8b046636" },
+  "name": "The Flash Tee",
+  "images": [
+    "https://varshell.com/cdn/shop/files/mens-garment-dyed-heavyweight-t-shirt-black-front-6491199dc359d.jpg?v=1687230887&width=990",
+    "https://varshell.com/cdn/shop/files/mens-garment-dyed-heavyweight-t-shirt-black-back-6491199dc6998.jpg?v=1687230889&width=990",
+    "https://varshell.com/cdn/shop/files/mens-garment-dyed-heavyweight-t-shirt-red-front-6491199dc6b0d.jpg?v=1687230891&width=990",
+    "https://varshell.com/cdn/shop/files/mens-garment-dyed-heavyweight-t-shirt-red-back-6491199dc6c9f.jpg?v=1687230893&width=990",
+    "https://varshell.com/cdn/shop/files/mens-garment-dyed-heavyweight-t-shirt-true-navy-front-6491199dc6dd9.jpg?v=1687230894&width=990",
+    "https://varshell.com/cdn/shop/files/mens-garment-dyed-heavyweight-t-shirt-true-navy-back-6491199dc7012.jpg?v=1687230896&width=990"
+  ],
+  "price": { "$numberDouble": "32.55" },
+  "description": "A comfortable and stylish t-shirt.",
+  "size": ["S", "M", "L", "XL"],
+  "ratings": { "$numberInt": "4" },
+  "reviews": [
+    {
+      "username": "JohnDoe",
+      "profile": "https://example.com/johndoe.jpg",
+      "review": "Great t-shirt, fits perfectly!"
+    },
+    {
+      "username": "JaneSmith",
+      "profile": "https://example.com/janesmith.jpg",
+      "review": "Love the design and quality."
+    }
+  ],
+  "colorImages": [
+    {
+      "color": "Black",
+      "url": "https://varshell.com/cdn/shop/files/mens-garment-dyed-heavyweight-t-shirt-black-front-6491199dc359d.jpg?v=1687230887&width=990"
+    },
+    {
+      "color": "Red",
+      "url": "https://varshell.com/cdn/shop/files/mens-garment-dyed-heavyweight-t-shirt-red-front-6491199dc6b0d.jpg?v=1687230891&width=990"
+    },
+    {
+      "color": "White",
+      "url": "https://varshell.com/cdn/shop/files/mens-garment-dyed-heavyweight-t-shirt-white-front-6491199dc76de.jpg?v=1687230901&width=990"
+    }
+  ],
+  "sizes": ["S", "M", "L", "XL", "XXL"]
+}

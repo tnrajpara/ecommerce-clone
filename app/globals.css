@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+animate-slide-down {
+  transition-property: transform;
+  transition-duration: 500ms;
+  /* Adjust the duration as needed */
+  transform: -translate-y-full;
+  /* Start the element off the screen */
+}
+
+.animate-slide-down-active {
+  transform: translate-y-0;
+  /* Move the element down to its original position */
+}
+
