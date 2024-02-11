@@ -3,6 +3,8 @@ import React, { createContext, useState } from "react";
 
 // Create a context
 const AppContext = createContext({
+  count: 1,
+  setCount: () => {},
   isCartOpen: false,
   setIsCartOpen: () => {},
   cartItems: [],
@@ -14,6 +16,7 @@ const AppContext = createContext({
 // Create a context provider
 export const AppProvider = ({ children }) => {
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [count, setCount] = useState(1);
   const [cartItems, setCartItems] = useState(() => {
     if (typeof window !== "undefined") {
       const storedCart = localStorage.getItem("cart");
@@ -33,6 +36,8 @@ export const AppProvider = ({ children }) => {
         setCartItems,
         showSearchBar,
         setShowSearchBar,
+        count,
+        setCount,
       }}
     >
       {children}

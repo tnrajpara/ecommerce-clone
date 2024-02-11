@@ -8,7 +8,7 @@ const NavbarItems = () => {
       <div className="flex justify-center flex-col md:flex-row space-x-6 items-center">
         <span>Collections</span>
         <div className="flex items-center space-x-3">Hoodie & Sweatshirts</div>
-        <span>jackets & cargo</span>
+        <span>Jackets & cargo</span>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import "./globals.css";
-import { Nunito_Sans } from "next/font/google";
+import { Cabin } from "next/font/google";
 import { AppProvider } from "./context/appcontext";
-const inter = Nunito_Sans({ subsets: ["latin"] });
+const inter = Cabin({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",

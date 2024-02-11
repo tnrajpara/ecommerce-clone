@@ -3,6 +3,7 @@
 import Navbar from "./components/navbar/Navbar";
 import Card from "./components/product/page";
 import { useAppContext } from "@/app/context/appcontext";
+import Banner from "./components/Banner/page";
 
 const Page = () => {
   const { showSearchBar, setShowSearchBar, isCartOpen, setIsCartOpen } =
@@ -22,7 +23,10 @@ const Page = () => {
           }
         }}
       >
-        <Card />
+        <div className="flex flex-col">
+          <Banner />
+          <Card />
+        </div>
       </div>
     </div>
   );

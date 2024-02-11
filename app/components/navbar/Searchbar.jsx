@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { AiOutlineSearch } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
+import { CiSearch } from "react-icons/ci";
 
 const Searchbar = ({ showSearchBar }) => {
   const [input, setInput] = useState("");
@@ -53,13 +53,7 @@ const Searchbar = ({ showSearchBar }) => {
     >
       <div className="flex justify-between items-center flex-col">
         <div>
-          <Image
-            src="https://cdn.shopify.com/s/files/1/0681/1146/6781/files/make_it_11_I_m_sorry_I_m_not_sure_what_you_re_referring_to._Could_you_please_provide_more_context_or_information_170_x_170_px_2000_x_2000_px_2000_x_1000_px_Logo_500_x_250_px_2000_x_10.png?v=1679847057&width=500"
-            alt=""
-            height={100}
-            width={100}
-            className="w-52"
-          />
+          <h1 className="font-extrabold text-4xl py-8 px-2">VARSHELL</h1>
         </div>
         <div className="flex space-x-5 w-2/3 justify-between rounded-md py-1 mb-4 border border-gray-800">
           <input
@@ -71,7 +65,7 @@ const Searchbar = ({ showSearchBar }) => {
               setInput(e.target.value);
             }}
           />
-          <AiOutlineSearch className="text-lg w-8 h-10 ml-2" />
+          <CiSearch className="text-lg w-8 h-10 ml-2" />
         </div>
         <div className="flex space-x-3">
           {input.trim() === "" ? (

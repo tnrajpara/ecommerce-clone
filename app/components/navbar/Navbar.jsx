@@ -1,13 +1,10 @@
 "use client";
 import React from "react";
-import { CiShoppingCart } from "react-icons/ci";
-import { BsMinecartLoaded } from "react-icons/bs";
-import { AiOutlineSearch } from "react-icons/ai";
+import { CiSearch } from "react-icons/ci";
 import Searchbar from "./Searchbar";
-import NavbarItems from "./NavbarItems";
-import Image from "next/image";
 import { useAppContext } from "@/app/context/appcontext";
 import Cart from "@/app/components/product/Cart";
+import { IoBagOutline } from "react-icons/io5";
 
 const Navbar = () => {
   const {
@@ -18,29 +15,34 @@ const Navbar = () => {
     setShowSearchBar,
   } = useAppContext();
   return (
-    <div className="relative z-10">
+    <div className="relative z-10 ">
       {showSearchBar && <Searchbar />}
       <div className="flex justify-between items-center">
-        <AiOutlineSearch
-          className="text-lg w-8 h-8 ml-2"
-          onClick={() => {
-            // Toggle the showSearchBar state variable
-            setShowSearchBar(!showSearchBar);
-          }}
-        />
         <div>
-          <Image
-            src="https://cdn.shopify.com/s/files/1/0681/1146/6781/files/make_it_11_I_m_sorry_I_m_not_sure_what_you_re_referring_to._Could_you_please_provide_more_context_or_information_170_x_170_px_2000_x_2000_px_2000_x_1000_px_Logo_500_x_250_px_2000_x_10.png?v=1679847057&width=500"
-            alt=""
-            width={200}
-            height={100}
-          />
+          <h1 className="font-extrabold font-bebas  text-4xl py-8 px-2 lg:ml-6">
+            VARSHELL
+          </h1>
         </div>
+
         <div className="flex space-x-3">
-          <CiShoppingCart
-            className="w-9 h-9 mr-2"
+          <div className="relative">
+            <IoBagOutline
+              className="w-8 h-8 mr-2 font-thin"
+              onClick={() => {
+                setIsCartOpen(!isCartOpen);
+              }}
+            />
+            {cartItems.length >= 0 && (
+              <div className="absolute top-0 right-0 bg-red-400 text-white rounded-full w-5 h-5 flex items-center justify-center">
+                {cartItems.length}
+              </div>
+            )}
+          </div>
+          <CiSearch
+            className="text-lg font-thin w-8 h-8 ml-2"
             onClick={() => {
-              setIsCartOpen(!isCartOpen);
+              // Toggle the showSearchBar state variable
+              setShowSearchBar(!showSearchBar);
             }}
           />
         </div>
@@ -48,7 +50,6 @@ const Navbar = () => {
           <Cart cartItems={cartItems} onClose={() => setIsCartOpen(false)} />
         )}
       </div>
-      <NavbarItems />
     </div>
   );
 };

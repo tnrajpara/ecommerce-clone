@@ -14,16 +14,14 @@
   box-sizing: border-box;
 }
 
-animate-slide-down {
-  transition-property: transform;
-  transition-duration: 500ms;
-  /* Adjust the duration as needed */
-  transform: -translate-y-full;
-  /* Start the element off the screen */
+@layer base{
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('/BebasNeue-Regular.ttf') format('truetype');
 }
 
-.animate-slide-down-active {
-  transform: translate-y-0;
-  /* Move the element down to its original position */
+@font-face {
+  font-family: 'ProtestStrike';
+  src: url('/ProtestStrike-Regular.ttf') format('truetype');
 }
-
+}

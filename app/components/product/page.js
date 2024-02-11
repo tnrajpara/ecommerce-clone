@@ -21,7 +21,6 @@ const Card = () => {
     (name, value) => {
       const params = new URLSearchParams(searchParams);
       params.set(name, value);
-
       return params.toString();
     },
     [searchParams]
@@ -65,23 +64,24 @@ const Card = () => {
           <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900"></div>
         </div>
       )}
-      <div className="flex items-center transition-all relative space-x-5">
+      <div className="flex justify-start ml-3 items-center space-x-10 mt-10 mb-10">
+        <div className="flex flex-col">
+          <h1 className="text-4xl font-bold font-bebas">Best Sellers</h1>
+        </div>
+      </div>
+      <div className="flex items-center transition-all relative space-x-5 justify-center  mb-10">
         {cards.map((card, index) => (
           <div
             key={index}
-            className="flex justify-center flex-col py-3 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-5 cursor-pointer"
+            className="flex justify-center flex-col py-3 border border-black  rounded-lg  cursor-pointer"
             // href={`/components/product/${card._id}`}
             onClick={() => {
               router.push(`/search?${createQueryString("product", card._id)}`);
             }}
           >
-            <div className="flex flex-col space-y-">
+            <div className="flex flex-col space-y-5 i">
               <Image
-                src={
-                  card.hovered
-                    ? card.colorImages[1].url
-                    : card.colorImages[0].url
-                }
+                src={card.hovered ? card.images[0] : card.images[2]}
                 width={300}
                 height={300}
                 alt="black-flash"
@@ -90,11 +90,11 @@ const Card = () => {
                 onMouseLeave={() => handleMouseLeave(index)}
               />
             </div>
-            <button className="text-center uppercase mt-4 leading-8 text-sm">
+            <button className="text-center uppercase mt-4  leading-8 text-xl font-bebas">
               {card.name}
             </button>
-            <p className="text-center leading-8">
-              From <span>${card.price}</span>
+            <p className="text-right mr-5 leading-8 font-bebas">
+              <span>₹ {card.price}</span>
             </p>
           </div>
         ))}

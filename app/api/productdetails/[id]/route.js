@@ -5,6 +5,7 @@ const client = new MongoClient(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+
 const getById = async (id) => {
   const db = client.db("products");
   const collection = db.collection("product");
