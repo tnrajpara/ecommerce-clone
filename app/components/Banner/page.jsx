@@ -8,12 +8,12 @@ const page = () => {
         <img src="/mobile-banner.webp" alt="" className="lg:hidden" />
         <img src="/banner.webp" alt="" className="lg:block hidden" />
       </picture>
-      <div className="absolute lg:top-1/2 lg:left-3/4 lg:transform lg:-translate-x-1/4 lg:-translate-y-11/12  lg:block bottom- left-1/2 transform -translate-x-1/2">
-        <div className="space-y-5 font-bebas">
-          <h1 className="xl:text-4xl text-xl  font-semibold text-black ">
+      <div className="absolute lg:top-1/2 lg:left-3/4  xl:top-1/2 xl:left-3/4 xl:transform xl:-translate-x-1/4 xl:-translate-y-11/12  lg:block bottom-5 left-1/2 transform -translate-x-1/2">
+        <div className="space-y-5 font-bebas ">
+          <h1 className="xl:text-4xl text-2xl lg:text-3xl font-semibold text-black ">
             I Choose You &
           </h1>
-          <h1 className="xl:text-4xl text-xl font-semibold ml-1 text-black">
+          <h1 className="xl:text-4xl text-2xl lg:text-3xl font-semibold ml-1 text-black">
             I Choose You Two
           </h1>
 

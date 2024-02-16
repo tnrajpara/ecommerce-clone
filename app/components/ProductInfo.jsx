@@ -47,7 +47,7 @@ const ProductInfo = () => {
           <div className="flex justify-center flex-col w-1/2 space-y-6">
             <div className="w-11/12 ml-4">
               <h1 className="lg:text-2xl xl:text-4xl font-semibold">
-                A slipper that's here to stay
+                A slipper that&apos;s here to stay
               </h1>
               <div className="mt-[10px] mb-[10px] pt-[0px] pb-[0px] pr-[0px] text-left">
                 <img src="/Line.svg" alt="" />
@@ -55,11 +55,12 @@ const ProductInfo = () => {
               <p className="text-lg xl:text-2xl xl:leading-[3rem] leading-10">
                 Made with a luxurious recycled ReWooly™ upper and a durable
                 "anywhere" sole made from responsibly sourced Pura-Latex rubber,
-                they're the slippers you'll be wearing for years to come.
+                they&apos;re the slippers you&apos;ll be wearing for years to
+                come.
               </p>
               <p className="text-lg xl:text-2xl xl:leading-[3rem] leading-10">
-                What's more, the neoprene heel cradle holds them in place for a
-                secure fit.
+                What&apos;s more, the neoprene heel cradle holds them in place
+                for a secure fit.
               </p>
             </div>
           </div>
