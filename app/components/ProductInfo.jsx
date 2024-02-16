@@ -53,10 +53,10 @@ const ProductInfo = () => {
                 <img src="/Line.svg" alt="" />
               </div>
               <p className="text-lg xl:text-2xl xl:leading-[3rem] leading-10">
-                Made with a luxurious recycled ReWooly™ upper and a durable
-                "anywhere" sole made from responsibly sourced Pura-Latex rubber,
-                they&apos;re the slippers you&apos;ll be wearing for years to
-                come.
+                Made with a luxurious recycled ReWooly upper and a durable
+                &quot;anywhere&quot; sole made from responsibly sourced
+                Pura-Latex rubber, they&apos;re the slippers you&apos;ll be
+                wearing for years to come.
               </p>
               <p className="text-lg xl:text-2xl xl:leading-[3rem] leading-10">
                 What&apos;s more, the neoprene heel cradle holds them in place

@@ -81,7 +81,7 @@ const Card = () => {
           >
             <div className="flex flex-col space-y-5 i">
               <Image
-                src={card.hovered ? card.images[0] : card.images[2]}
+                src={card.hovered ? card.images[2] : card.images[0]}
                 width={300}
                 height={300}
                 alt="black-flash"
